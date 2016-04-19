@@ -1,0 +1,4 @@
+sw_init completed
+tarve complete
+2095450 4890168 2602069 58118
+error: error reading returncode of remote command
