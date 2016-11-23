@@ -12,6 +12,10 @@
 #include <assert.h>
 #define NaN (0.0/0.0)
 int main(int argc,char *argv[]){
+	if(argc < 2){
+		printf("input:wam query\n");
+		return 1;
+	}
 	FILE *fp;
 	wam_init(NULL);
 	WAM *w;
