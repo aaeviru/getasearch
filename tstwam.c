@@ -38,7 +38,7 @@ int main(int argc,char *argv[]){
 */	
 	ssize_t lenth = argc -2;
 	int i = 2,j = 0;
-	struct syminfo q[10];
+	struct syminfo q[100];
 	printf("lenth:%lld\n",lenth);
 	if(q){
 		while(i<argc){
@@ -84,7 +84,7 @@ int main(int argc,char *argv[]){
 */
 	ssize_t len = 0;
 	ssize_t num = 10;
-	struct syminfo *result = wsh(q,lenth,w,WAM_COL,WT_SMARTAW,&num,&len);
+	struct syminfo *result = wsh(q,lenth,w,WAM_COL,WT_SMART,&num,&len);
 	printf("%d\n",len);
 	for(i=0;i<num;i++){
 		char name[10];
